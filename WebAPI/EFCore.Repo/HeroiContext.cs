@@ -1,8 +1,8 @@
-﻿using Microsoft.EntityFrameworkCore;
-using WebAPI.Models;
+﻿using EFCore.Dominio;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 
-namespace WebAPI.Data
+namespace EFCore.Repo
 {
     public class HeroiContext : DbContext
     {
@@ -12,12 +12,9 @@ namespace WebAPI.Data
         public DbSet<Arma> Armas { get; set; }
         public HeroiBatalha HeroisBatalhas { get; set; }
         public IdentidadeSecreta IdentidadesSecretas { get; set; }
-        public HeroiContext(DbContextOptions options) : base(options){}
+        
+        public HeroiContext(DbContextOptions<HeroiContext> options) : base(options){}
 
-        //protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
-        //{
-        //    //optionsBuilder.UseSqlServer("ConnectionString");        
-        //}
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

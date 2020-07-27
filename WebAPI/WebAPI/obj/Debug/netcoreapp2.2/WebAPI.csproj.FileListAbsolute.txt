@@ -14,3 +14,8 @@ F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.As
 F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.RazorTargetAssemblyInfo.cache
 F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.dll
 F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.pdb
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\EFCore.Dominio.dll
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\EFCore.Repo.dll
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\EFCore.Dominio.pdb
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\bin\Debug\netcoreapp2.2\EFCore.Repo.pdb
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\WebAPI\obj\Debug\netcoreapp2.2\WebAPI.csproj.CopyComplete

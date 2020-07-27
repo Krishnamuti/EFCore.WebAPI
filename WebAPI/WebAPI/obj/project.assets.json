@@ -4466,6 +4466,32 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
+      },
+      "EFCore.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/EFCore.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EFCore.Dominio.dll": {}
+        }
+      },
+      "EFCore.Repo/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "EFCore.Dominio": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Design": "2.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0"
+        },
+        "compile": {
+          "bin/placeholder/EFCore.Repo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/EFCore.Repo.dll": {}
+        }
       }
     }
   },
@@ -12184,10 +12210,22 @@
         "system.xml.xpath.xdocument.4.3.0.nupkg.sha512",
         "system.xml.xpath.xdocument.nuspec"
       ]
+    },
+    "EFCore.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../EFCore.Dominio/EFCore.Dominio.csproj",
+      "msbuildProject": "../EFCore.Dominio/EFCore.Dominio.csproj"
+    },
+    "EFCore.Repo/1.0.0": {
+      "type": "project",
+      "path": "../EFCore.Repo/EFCore.Repo.csproj",
+      "msbuildProject": "../EFCore.Repo/EFCore.Repo.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "EFCore.Dominio >= 1.0.0",
+      "EFCore.Repo >= 1.0.0",
       "Microsoft.AspNetCore.App >= 2.2.0",
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
@@ -12223,7 +12261,14 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Dominio\\EFCore.Dominio.csproj": {
+              "projectPath": "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Dominio\\EFCore.Dominio.csproj"
+            },
+            "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Repo\\EFCore.Repo.csproj": {
+              "projectPath": "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Repo\\EFCore.Repo.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

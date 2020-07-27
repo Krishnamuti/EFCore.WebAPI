@@ -24,6 +24,8 @@
     ".NETCoreApp,Version=v2.2": {
       "WebAPI/1.0.0": {
         "dependencies": {
+          "EFCore.Dominio": "1.0.0",
+          "EFCore.Repo": "1.0.0",
           "Microsoft.AspNetCore.App": "2.2.0",
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
@@ -131,6 +133,28 @@
         },
         "compile": {
           "ref/netstandard2.0/System.Security.Principal.Windows.dll": {}
+        }
+      },
+      "EFCore.Dominio/1.0.0": {
+        "runtime": {
+          "EFCore.Dominio.dll": {}
+        },
+        "compile": {
+          "EFCore.Dominio.dll": {}
+        }
+      },
+      "EFCore.Repo/1.0.0": {
+        "dependencies": {
+          "EFCore.Dominio": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.2.0",
+          "Microsoft.EntityFrameworkCore.Design": "2.2.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "2.2.0"
+        },
+        "runtime": {
+          "EFCore.Repo.dll": {}
+        },
+        "compile": {
+          "EFCore.Repo.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3345,6 +3369,16 @@
       "sha512": "sha512-ojD0PX0XhneCsUbAZVKdb7h/70vyYMDYs85lwEI+LngEONe/17A0cFaRFqZU+sOEidcVswYWikYOQ9PPfjlbtQ==",
       "path": "system.security.principal.windows/4.7.0",
       "hashPath": "system.security.principal.windows.4.7.0.nupkg.sha512"
+    },
+    "EFCore.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "EFCore.Repo/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
     },
     "Microsoft.AspNet.WebApi.Client/5.2.6": {
       "type": "package",

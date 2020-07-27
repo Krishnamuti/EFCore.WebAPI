@@ -1,0 +1,11 @@
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\bin\Debug\netstandard2.0\EFCore.Dominio.dll
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\obj\Debug\netstandard2.0\EFCore.Repo.csprojAssemblyReference.cache
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\obj\Debug\netstandard2.0\EFCore.Repo.AssemblyInfoInputs.cache
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\obj\Debug\netstandard2.0\EFCore.Repo.AssemblyInfo.cs
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\bin\Debug\netstandard2.0\EFCore.Repo.deps.json
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\bin\Debug\netstandard2.0\EFCore.Repo.dll
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\bin\Debug\netstandard2.0\EFCore.Repo.pdb
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\bin\Debug\netstandard2.0\EFCore.Dominio.pdb
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\obj\Debug\netstandard2.0\EFCore.Repo.csproj.CopyComplete
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\obj\Debug\netstandard2.0\EFCore.Repo.dll
+F:\PROJETOS\GITHUB\EFCore.WebAPI\WebAPI\EFCore.Repo\obj\Debug\netstandard2.0\EFCore.Repo.pdb

@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\WebAPI\\WebAPI.csproj": {}
+    "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Repo\\EFCore.Repo.csproj": {}
   },
   "projects": {
     "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Dominio\\EFCore.Dominio.csproj": {
@@ -120,86 +120,6 @@
               "target": "Package",
               "version": "[2.0.3, )",
               "autoReferenced": true
-            }
-          },
-          "imports": [
-            "net461",
-            "net462",
-            "net47",
-            "net471",
-            "net472",
-            "net48"
-          ],
-          "assetTargetFallback": true,
-          "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.100\\RuntimeIdentifierGraph.json"
-        }
-      }
-    },
-    "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\WebAPI\\WebAPI.csproj": {
-      "version": "1.0.0",
-      "restore": {
-        "projectUniqueName": "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\WebAPI\\WebAPI.csproj",
-        "projectName": "WebAPI",
-        "projectPath": "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\WebAPI\\WebAPI.csproj",
-        "packagesPath": "C:\\Users\\krish\\.nuget\\packages\\",
-        "outputPath": "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\WebAPI\\obj\\",
-        "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
-        "configFilePaths": [
-          "C:\\Users\\krish\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
-        ],
-        "originalTargetFrameworks": [
-          "netcoreapp2.2"
-        ],
-        "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
-        },
-        "frameworks": {
-          "netcoreapp2.2": {
-            "projectReferences": {
-              "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Dominio\\EFCore.Dominio.csproj": {
-                "projectPath": "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Dominio\\EFCore.Dominio.csproj"
-              },
-              "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Repo\\EFCore.Repo.csproj": {
-                "projectPath": "F:\\PROJETOS\\GITHUB\\EFCore.WebAPI\\WebAPI\\EFCore.Repo\\EFCore.Repo.csproj"
-              }
-            }
-          }
-        },
-        "warningProperties": {
-          "warnAsError": [
-            "NU1605"
-          ]
-        }
-      },
-      "frameworks": {
-        "netcoreapp2.2": {
-          "dependencies": {
-            "Microsoft.AspNetCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "Microsoft.AspNetCore.Razor.Design": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )"
-            },
-            "Microsoft.NETCore.App": {
-              "suppressParent": "All",
-              "target": "Package",
-              "version": "[2.2.0, )",
-              "autoReferenced": true
-            },
-            "System.Configuration.ConfigurationManager": {
-              "target": "Package",
-              "version": "[4.7.0, )"
             }
           },
           "imports": [
