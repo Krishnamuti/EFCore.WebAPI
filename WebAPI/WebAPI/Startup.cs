@@ -32,11 +32,22 @@ namespace WebAPI
             });
 
             services.AddScoped<IEFCoreRepository, EFCoreRepository>();
+
+            services.AddCors();
+
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
+
+            app.UseCors(options => options
+                        .WithOrigins() // .WithOrigins("http://localhost:3000")
+                        .AllowAnyHeader()
+                        .AllowAnyHeader()
+                        .AllowAnyMethod()
+                    );
+
             if (env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();
