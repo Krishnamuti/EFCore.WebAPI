@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EFCore.Repo.Migrations
 {
     [DbContext(typeof(HeroiContext))]
-    [Migration("20200727224906_criar_banco")]
+    [Migration("20200829210333_criar_banco")]
     partial class criar_banco
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -80,7 +80,7 @@ namespace EFCore.Repo.Migrations
 
                     b.HasIndex("HeroiId");
 
-                    b.ToTable("HeroiBatalha");
+                    b.ToTable("HeroisBatalhas");
                 });
 
             modelBuilder.Entity("EFCore.Dominio.IdentidadeSecreta", b =>
@@ -98,7 +98,7 @@ namespace EFCore.Repo.Migrations
                     b.HasIndex("HeroiId")
                         .IsUnique();
 
-                    b.ToTable("IdentidadeSecreta");
+                    b.ToTable("IdentidadesSecretas");
                 });
 
             modelBuilder.Entity("EFCore.Dominio.Arma", b =>
@@ -112,7 +112,7 @@ namespace EFCore.Repo.Migrations
             modelBuilder.Entity("EFCore.Dominio.HeroiBatalha", b =>
                 {
                     b.HasOne("EFCore.Dominio.Batalha", "Batalha")
-                        .WithMany()
+                        .WithMany("HeroisBatalhas")
                         .HasForeignKey("BatalhaId")
                         .OnDelete(DeleteBehavior.Cascade);
 

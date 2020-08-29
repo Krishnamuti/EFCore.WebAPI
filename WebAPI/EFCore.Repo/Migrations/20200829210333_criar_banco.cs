@@ -58,7 +58,7 @@ namespace EFCore.Repo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "HeroiBatalha",
+                name: "HeroisBatalhas",
                 columns: table => new
                 {
                     HeroiId = table.Column<int>(nullable: false),
@@ -66,15 +66,15 @@ namespace EFCore.Repo.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_HeroiBatalha", x => new { x.BatalhaId, x.HeroiId });
+                    table.PrimaryKey("PK_HeroisBatalhas", x => new { x.BatalhaId, x.HeroiId });
                     table.ForeignKey(
-                        name: "FK_HeroiBatalha_Batalhas_BatalhaId",
+                        name: "FK_HeroisBatalhas_Batalhas_BatalhaId",
                         column: x => x.BatalhaId,
                         principalTable: "Batalhas",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
-                        name: "FK_HeroiBatalha_Herois_HeroiId",
+                        name: "FK_HeroisBatalhas_Herois_HeroiId",
                         column: x => x.HeroiId,
                         principalTable: "Herois",
                         principalColumn: "Id",
@@ -82,7 +82,7 @@ namespace EFCore.Repo.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "IdentidadeSecreta",
+                name: "IdentidadesSecretas",
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
@@ -92,9 +92,9 @@ namespace EFCore.Repo.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_IdentidadeSecreta", x => x.Id);
+                    table.PrimaryKey("PK_IdentidadesSecretas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_IdentidadeSecreta_Herois_HeroiId",
+                        name: "FK_IdentidadesSecretas_Herois_HeroiId",
                         column: x => x.HeroiId,
                         principalTable: "Herois",
                         principalColumn: "Id",
@@ -107,13 +107,13 @@ namespace EFCore.Repo.Migrations
                 column: "HeroiId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_HeroiBatalha_HeroiId",
-                table: "HeroiBatalha",
+                name: "IX_HeroisBatalhas_HeroiId",
+                table: "HeroisBatalhas",
                 column: "HeroiId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_IdentidadeSecreta_HeroiId",
-                table: "IdentidadeSecreta",
+                name: "IX_IdentidadesSecretas_HeroiId",
+                table: "IdentidadesSecretas",
                 column: "HeroiId",
                 unique: true);
         }
@@ -124,10 +124,10 @@ namespace EFCore.Repo.Migrations
                 name: "Armas");
 
             migrationBuilder.DropTable(
-                name: "HeroiBatalha");
+                name: "HeroisBatalhas");
 
             migrationBuilder.DropTable(
-                name: "IdentidadeSecreta");
+                name: "IdentidadesSecretas");
 
             migrationBuilder.DropTable(
                 name: "Batalhas");

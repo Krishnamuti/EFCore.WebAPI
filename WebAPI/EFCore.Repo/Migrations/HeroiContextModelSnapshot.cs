@@ -78,7 +78,7 @@ namespace EFCore.Repo.Migrations
 
                     b.HasIndex("HeroiId");
 
-                    b.ToTable("HeroiBatalha");
+                    b.ToTable("HeroisBatalhas");
                 });
 
             modelBuilder.Entity("EFCore.Dominio.IdentidadeSecreta", b =>
@@ -96,7 +96,7 @@ namespace EFCore.Repo.Migrations
                     b.HasIndex("HeroiId")
                         .IsUnique();
 
-                    b.ToTable("IdentidadeSecreta");
+                    b.ToTable("IdentidadesSecretas");
                 });
 
             modelBuilder.Entity("EFCore.Dominio.Arma", b =>
@@ -110,7 +110,7 @@ namespace EFCore.Repo.Migrations
             modelBuilder.Entity("EFCore.Dominio.HeroiBatalha", b =>
                 {
                     b.HasOne("EFCore.Dominio.Batalha", "Batalha")
-                        .WithMany()
+                        .WithMany("HeroisBatalhas")
                         .HasForeignKey("BatalhaId")
                         .OnDelete(DeleteBehavior.Cascade);
 

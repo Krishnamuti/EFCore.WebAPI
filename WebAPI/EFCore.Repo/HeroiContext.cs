@@ -10,8 +10,8 @@ namespace EFCore.Repo
         public DbSet<Heroi> Herois { get; set; }
         public DbSet<Batalha> Batalhas { get; set; }
         public DbSet<Arma> Armas { get; set; }
-        public HeroiBatalha HeroisBatalhas { get; set; }
-        public IdentidadeSecreta IdentidadesSecretas { get; set; }
+        public DbSet<HeroiBatalha> HeroisBatalhas { get; set; }
+        public DbSet<IdentidadeSecreta> IdentidadesSecretas { get; set; }
         
         public HeroiContext(DbContextOptions<HeroiContext> options) : base(options){}
 
