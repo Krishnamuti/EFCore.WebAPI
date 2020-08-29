@@ -1,6 +1,7 @@
 ﻿using System;
+using System.Collections.Generic;
 
-namespace WebAPI.Models
+namespace EFCore.Dominio
 {
     public class Batalha
     {
@@ -9,5 +10,6 @@ namespace WebAPI.Models
         public string Descricao { get; set; }
         public DateTime DtInicio { get; set; }
         public DateTime DtFim { get; set; }
+        public List<HeroiBatalha> HeroisBatalhas { get; set; }
     }
 }
